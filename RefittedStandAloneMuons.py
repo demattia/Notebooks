@@ -1,6 +1,18 @@
 #import ROOT
 # from utils import deltaR
 import math
+import ROOT
+
+muMass = 0.1057
+
+def computeCosineAndMass(mu1, mu2):
+    muon1 = ROOT.TLorentzVector()
+    muon2 = ROOT.TLorentzVector()
+    muon1.SetPtEtaPhiM(mu1.pt, mu1.eta, mu1.phi, muMass)
+    muon2.SetPtEtaPhiM(mu2.pt, mu2.eta, mu2.phi, muMass)
+    cosine = math.cos(muon1.Angle(muon2.Vect()))
+    mass = (muon1+muon2).M()
+    return (cosine, mass)
 
 
 def deltaPhi(phi1, phi2):

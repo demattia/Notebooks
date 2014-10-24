@@ -1,6 +1,6 @@
+
 """
 Helper module for displaying ROOT canvases in ipython notebooks
- 
 Usage example:
 # Save this file as rootnotes.py to your working directory.
 import rootnotes
@@ -10,9 +10,7 @@ c1.SetGridx()
 c1.SetGridy()
 fun1.Draw()
 c1
- 
 More examples: http://mazurov.github.io/webfest2013/
- 
 @author alexander.mazurov@cern.ch
 @author andrey.ustyuzhanin@cern.ch
 @date 2013-08-09
@@ -32,10 +30,10 @@ def canvas(name="icanvas", size=(800, 600)):
     # canvas = ROOT.gROOT.FindObject(name)
     assert len(size) == 2
     #if canvas:
-    #    return canvas
+    # return canvas
     #else:
     #if canvas:
-    #    delete canvas
+    # delete canvas
     return ROOT.TCanvas(name, name, size[0], size[1])
  
  
