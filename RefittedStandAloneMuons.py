@@ -5,7 +5,10 @@ import ROOT
 
 muMass = 0.1057
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 906a95bcc56d3ed7061b2df61d04773443a33409
 def computeCosineAndMass(mu1, mu2):
     muon1 = ROOT.TLorentzVector()
     muon2 = ROOT.TLorentzVector()

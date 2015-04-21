@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-20T12:08:50-05:00
+
+====== StandAloneMuonsAnalysis ======
+Created 10/20/2014
+
+Links to the main studies for the analysis (**google docs**):
+* [[https://docs.google.com/document/d/1mtM8JX-m5sh9e1UzLzLKmdted5t0kocnxe8UcRfQi_4/edit|New MC Production]]
+* [[https://docs.google.com/document/d/1cp-nxSlwwiZzEylQTUWxUTVjTvT-f4uWu19vK_hlwIk/edit|Cosmic MC Production]]
+* [[https://docs.google.com/document/d/12pA4ToEnImgOSeNi413lOGvnjD2ZiR1X5IF2DeAQK4s/edit|Tracking Efficiency from Cosmics]]
+* [[https://docs.google.com/document/d/19WTPOeEL-gfDH-t0LbF2hlUzvXXtZlTIhL-0_c8DEyg/edit|Reason for Low Trigger Efficiency]]
+* [[https://docs.google.com/document/d/14w0vxAyNJWQa_wFiOCxTika3PHX6GoRTlZRURm3Uf-0/edit|Symmetry of Cosmic Rejected Background]]
+* [[https://docs.google.com/document/d/1dvFwvSc5jt6M6jlh9onxBEua_qOqK53g3HHN9dFnGOg/edit|Secondary Vertex Reconstruction Efficiency]]
+* [[https://docs.google.com/document/d/1NwFAGRQn4cvSo1zcb5pzg2KUHjEG4KJlCPBjzdRLJQY/edit|MET Trigger]]
+* [[https://docs.google.com/document/d/1vcwfA92tB9bIL_NUGzQVFPoBJ2AZpZpxaQj4-jqp81U/edit#heading=h.1bqbjqtgqvom|L2Muons vs Offline Muons Reconstruction]]
+* [[https://docs.google.com/document/d/14UCZRMxDaRN1uvJlWTNSrQs95yj8N0uBv4C_zL2nzho/edit|Background Systematics]]
+* [[https://docs.google.com/document/d/158imWO5nFtyXx5rxa0GJ6fuUwwwCUwF1IbZooThEBsw/edit|Combined Limits]]
+
+
+Tasks
+[ ] Recompute the tracking efficiency systematic
+[*] Study triggerObjectPt on signal MC sample (compare to SA Pt and genPt)
+[*] Efficiencies and cutFlow for prompt rejection (and no rejection)
+
+[ ] Add plot for background Lxy/sigma fit and check χ^2 of the fits
+[ ] Distributions with relaxed cuts
+
+
+Lxy and d0 correlation in signal MC and cosmics is very different.
+
+**Most important:**
+[*] **Double check the acceptance cut on the Lxy plot in signal MC.**
+[ ] **Tigthen the acceptance to 4 meters to ensure that all events are inside.**
+
+[ ] Remove figure 81 SA and RSA.
+
+Remake figure 83 by normalizing to the |d0| < 20 cm RSA pt distributions.
+
+
+[ ] Remake the figure for DeltaPt/Pt as DeltaRho/Rho.
+

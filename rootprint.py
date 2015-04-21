@@ -1,3 +1,4 @@
+
 # This is for intercepting the output of ROOT
 # In a cell, put %%rootprint so that the output that would normally be
 # sent directly to the stdout will instead be displayed in the cell.
@@ -10,8 +11,8 @@ from IPython.core.magic import (Magics, magics_class, cell_magic)
 class RootMagics(Magics):
     """Magics related to Root.
 
-    %%rootprint  - Capture Root stdout output and show in result cell
-    """
+%%rootprint - Capture Root stdout output and show in result cell
+"""
 
     def __init__(self, shell):
         super(RootMagics, self).__init__(shell)
@@ -30,5 +31,5 @@ class RootMagics(Magics):
             print tmpFile.read()
 
 # Register
-ip = get_ipython() 
+ip = get_ipython()
 ip.register_magics(RootMagics)
