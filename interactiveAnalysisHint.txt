@@ -1,0 +1,3 @@
+One possibility is to compare the decay length significance distributions and plot the invariant mass after placing a cut on this variable.
+Plot the decayLengthSignificance for signal MC and data: plot("dimu.mass", "dimu.mass < 200 && dimu.decayLengthSignificance > 10")
+Plot the mass distribution placing cuts on the decayLengthSignificance, e.g.: plot("dimu.decayLengthSignificance", "dimu.mass < 200 && decayLengthSignificance > 0 && decayLengthSignificance < 100")

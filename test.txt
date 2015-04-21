@@ -1,0 +1,25 @@
+Info in <TCanvas::Print>: png file /var/folders/jv/lrk0_v6n0wg6_yq562t49yxr0000gn/T/tmpw8J21O.png has been created
+Info in <TCanvas::Print>: png file /var/folders/jv/lrk0_v6n0wg6_yq562t49yxr0000gn/T/tmpfudGhM.png has been created
+ NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     8.01116e+02   9.64674e+00   2.82938e-02   2.17123e-06
+   2  Mean        -2.28476e-02   9.96013e-03   3.50838e-05   2.53522e-03
+   3  Sigma        9.91213e-01   6.63908e-03   6.49847e-06  -1.55889e-02
+
+****************************************
+Minimizer is Linear
+Chi2                      =      52.7602
+NDf                       =           49
+p0                        =      198.945   +/-   1.99472     
+ FCN=51.0502 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=1.55391e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     8.01116e+02   9.64674e+00   2.82938e-02   2.17123e-06
+   2  Mean        -2.28476e-02   9.96013e-03   3.50838e-05   2.53522e-03
+   3  Sigma        9.91213e-01   6.63908e-03   6.49847e-06  -1.55889e-02
+
+****************************************
+Minimizer is Linear
+Chi2                      =      52.7602
+NDf                       =           49
+p0                        =      198.945   +/-   1.99472     

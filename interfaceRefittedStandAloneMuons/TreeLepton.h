@@ -20,14 +20,13 @@ struct TreeLepton
     vx(-999.), vy(-999.), vz(-999.),
     genIndex(-999), genPdgId(0), genPt(-999), genVertexX(-999), genVertexY(-999), genVertexZ(-999), genPhi(-999), genEta(-999), genTheta(-999), genD0(-999),
     genSignalOriginPdgId(0), genSignalOriginCtau(0), genSignalOriginLxy(0),
-    dtStationsWithValidHits(-999), cscStationsWithValidHits(-999), dtStationsWithAnyHits(-999), cscStationsWithAnyHits(-999), muonStationsWithAnyHits(-999),
+    dtStationsWithValidHits(-999), cscStationsWithValidHits(-999), dtStationsWithAnyHits(-999), cscStationsWithAnyHits(-999), muonStationsWithAnyHits(-999), numberOfHits(-999), numberOfValidHits(-999), numberOfValidMuonCSCHits(-999), numberOfValidMuonDTHits(-999), numberOfValidMuonHits(-999), numberOfLostHits(-999), numberOfLostMuonCSCHits(-999), numberOfLostMuonDTHits(-999), numberOfLostMuonHits(-999),
     minMatchedDeltaR_1(10000), minMatchedDeltaR_2(10000), minMatchedDeltaR_3(10000), minMatchedDeltaR_4(10000), minMatchedDeltaR_5(10000),
     minMatchedDeltaR_10(10000), minMatchedDeltaR_15(10000), minMatchedDeltaR_20(10000), minMatchedDeltaR_26(10000),
     minMatchedGBDeltaR_1(10000), minMatchedGBDeltaR_2(10000), minMatchedGBDeltaR_3(10000), minMatchedGBDeltaR_4(10000), minMatchedGBDeltaR_5(10000),
     minMatchedGBDeltaR_10(10000), minMatchedGBDeltaR_15(10000), minMatchedGBDeltaR_20(10000), minMatchedGBDeltaR_26(10000),
     emMax(-999), ecal_time(-999), hadMax(-999), hcal_time(-999), emErr(-999), hadErr(-999),
-    // minDxIn(1000), minDyIn(1000), minDxOut(1000), minDyOut(1000), minDzIn(1000), minDzOut(1000)
-    minD2DIn(1000), minD2DOut(1000), minD3DIn(1000), minD3DOut(1000)
+    minDxIn(1000), minDyIn(1000), minDxOut(1000), minDyOut(1000), minDzIn(1000), minDzOut(1000)
   {}
 
   // Is track valid?
@@ -137,6 +136,15 @@ struct TreeLepton
   Int_t dtStationsWithAnyHits;
   Int_t cscStationsWithAnyHits;
   Int_t muonStationsWithAnyHits;
+  Int_t numberOfHits;
+  Int_t numberOfValidHits;
+  Int_t numberOfValidMuonCSCHits;
+  Int_t numberOfValidMuonDTHits;
+  Int_t numberOfValidMuonHits;
+  Int_t numberOfLostHits;
+  Int_t numberOfLostMuonCSCHits;
+  Int_t numberOfLostMuonDTHits;
+  Int_t numberOfLostMuonHits;
 
   float minMatchedDeltaR_1;
   float minMatchedDeltaR_2;
@@ -172,18 +180,14 @@ struct TreeLepton
   float hcal_timeErr;
   float emErr;
   float hadErr;
-
-//  float minDxIn;
-//  float minDyIn;
-//  float minDxOut;
-//  float minDyOut;
-//  float minDzIn;
-//  float minDzOut;
-  float minD2DIn;
-  float minD2DOut;
-  float minD3DIn;
-  float minD3DOut;
-
+ 
+//Additional RSA-SA Matching Parameters...
+  float minDxIn;
+  float minDyIn;
+  float minDxOut;
+  float minDyOut;
+  float minDzIn;
+  float minDzOut;
 
   ClassDef(TreeLepton, 1)
 };
